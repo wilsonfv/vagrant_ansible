@@ -11,6 +11,12 @@ Run this under the project root directory, it will spin up 4 Linux centos boxes,
 vagrant up
 ``` 
 
+# ansible-example
+You can download some of the examples from [here](https://github.com/ansible/ansible-examples) then under the project root directory, run the sample playbook
+```
+[vagrant@master1 vagrant]$ ansible-playbook ansible/tomcat-standalone/site.yml --become --become-method=sudo --become-user=root
+```
+
 # Tips
 For macOS users, no virtualbox guest addtion is available so if you wanna sync the directories on your mac host machain to vagrant guest machine, on the project root directory, you may run
 ```
